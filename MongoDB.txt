@@ -1,0 +1,24 @@
+Add your connection string into your application code
+
+==================================================================================================
+
+mongodb+srv://escarabatverd:<password>@clusterocr.76dpav8.mongodb.net/?retryWrites=true&w=majority
+
+==================================================================================================
+
+· Include full driver code example:
+      
+const { MongoClient, ServerApiVersion } = require('mongodb');
+const uri = "mongodb+srv://escarabatverd:Atlas10@clusterocr.76dpav8.mongodb.net/?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
+
+==================================================================================================
+
+Replace <password> with the password for the escarabatverd user. Ensure any option params are URL encoded ( https://dochub.mongodb.org/core/atlas-url-encoding ).
+
+Having trouble connecting? View our troubleshooting documentation( https://dochub.mongodb.org/core/atlas-connection-troubleshooting )

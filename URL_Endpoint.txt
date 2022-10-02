@@ -1,0 +1,5 @@
+By default, your Data API returns data as JSON which will cast Timestamp, ObjectId, Binary, and Decimal128 data types into strings. Visit the Settings page or add the appropriate header to change this return type to Extended JSON. 
+
+URL Endpoint:
+
+https://data.mongodb-api.com/app/data-gaylj/endpoint/data/v1
