@@ -87,5 +87,5 @@ Savez-vous implémenter le CRUD ? Compétences évaluées Créer une API REST av
 
         · ZEBRA
 
-<img src = "./gorilla.png"/>
+<img src = "./Gorilla.png"/>
 
